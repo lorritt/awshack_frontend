@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/onsenui/css/onsenui.css';
-@import '../node_modules/onsenui/css/onsen-css-components.css';
+@import 'assets/onsen-css-components.css';
+@import 'assets/theme.css';
+
 @font-face {
 	font-family: 'TheBlacklist';
 	src: url('assets/TheBlacklist.eot');
@@ -10,13 +12,6 @@
 .fontsforweb_fontid_79299 {
 	font-family: 'TheBlacklist' !important;
 }
-
-.logo{
-    text-shadow: #666 0 0 5px;
-    font-size:65px;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-	font-family: 'TheBlacklist' !important;
-
+.text-input--underbar{
+    color: white !important;
 }
