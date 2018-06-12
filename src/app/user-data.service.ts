@@ -10,9 +10,16 @@ export class UserDataService {
 
   setUsername(username: String) {
     this.username = username;
+    localStorage.setItem('username', username.toString());
   }
 
   getUsername() {
-    return this.username;
+    if (localStorage.getItem('username') != null) {
+      return localStorage.getItem('username');
+    }
+  }
+
+  logout() {
+    localStorage.clear();
   }
 }

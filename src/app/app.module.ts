@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ChallengeNavComponent } from './challenge-nav/challenge-nav.component';
 import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginComponent } from './login/login.component';
     PointsComponent,
     ChallengeNavComponent,
     SplashComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -28,6 +30,7 @@ import { LoginComponent } from './login/login.component';
     RouterModule.forRoot([
       { path: 'challenge', component: ChallengeNavComponent },
       { path: 'login', component: LoginComponent},
+      { path: 'home', component: HomeComponent},
       { path: '', component: SplashComponent},
       { path: '**', component: SplashComponent}
     ]),
