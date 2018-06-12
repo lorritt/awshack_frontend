@@ -16,6 +16,7 @@ import { ContentPageComponent } from './contentpage/contentpage.component';
 import { MenuService } from './menu.service';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     SidePageComponent,
     ContentPageComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    TeamComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -40,6 +42,7 @@ import { HomeComponent } from './home/home.component';
       { path: 'challenge', component: ChallengeNavComponent },
       { path: 'login', component: LoginComponent},
       { path: 'home', component: HomeComponent},
+      { path: 'team', component: TeamComponent},
       { path: '', component: SplashComponent},
       { path: '**', component: SplashComponent}
     ]),
