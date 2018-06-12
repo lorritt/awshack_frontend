@@ -5,8 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class UserDataService {
   private username: String;
+  private points: number;
 
-  constructor() { }
+  constructor() {
+    this.points = 999;
+  }
 
   setUsername(username: String) {
     this.username = username;
@@ -21,5 +24,8 @@ export class UserDataService {
 
   logout() {
     localStorage.clear();
+  }
+  getPoints() {
+     return this.points;
   }
 }

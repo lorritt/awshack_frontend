@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { PointsComponent } from './points/points.component';
@@ -34,6 +35,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     OnsenModule,
+    AngularFontAwesomeModule,
     RouterModule.forRoot([
       { path: 'challenge', component: ChallengeNavComponent },
       { path: 'login', component: LoginComponent},

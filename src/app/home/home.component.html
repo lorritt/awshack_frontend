@@ -1,4 +1,13 @@
-<p>
-  Welcome!!!ß {{userData.getUsername()}}
-</p>
+<ons-page>
+<div class="content">
+  <div class="header">  Welcome {{userData.getUsername()}} </div>
+
 <app-points></app-points>
+
+<ons-card>
+<ons-button modifier="large" (click)="getChallenge()">Get a Challenge</ons-button>
+</ons-card>
+</div>
+</ons-page>
+
+
