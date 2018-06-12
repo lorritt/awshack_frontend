@@ -14,6 +14,7 @@ import { SidePageComponent } from './sidepage/sidepage.component';
 import { ContentPageComponent } from './contentpage/contentpage.component';
 import { MenuService } from './menu.service';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
     MenuComponent,
     SidePageComponent,
     ContentPageComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -34,7 +36,8 @@ import { LoginComponent } from './login/login.component';
     OnsenModule,
     RouterModule.forRoot([
       { path: 'challenge', component: ChallengeNavComponent },
-      { path: 'login', component: LoginComponent },
+      { path: 'login', component: LoginComponent},
+      { path: 'home', component: HomeComponent},
       { path: '', component: SplashComponent},
       { path: '**', component: SplashComponent}
     ]),

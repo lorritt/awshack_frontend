@@ -23,7 +23,7 @@
     "core-js": "^2.5.4",
     "ngx-onsenui": "^4.2.2",
     "onsenui": "^2.10.1",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.2.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

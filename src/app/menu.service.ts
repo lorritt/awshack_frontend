@@ -11,6 +11,7 @@ export class MenuService {
     return this.subject.asObservable();
   }
   open() {
+    console.log("Opening Menu");
     this.subject.next();
   }
 }
