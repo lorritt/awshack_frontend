@@ -28,4 +28,7 @@ export class UserDataService {
   getPoints() {
      return this.points;
   }
+  setPoints(points: number) {
+    this.points = points;
+  }
 }

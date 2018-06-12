@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../menu.service';
 
 @Component({
-  selector: 'ons-page',
   templateUrl: './contentpage.component.html',
   styleUrls: ['./contentpage.component.css']
 })
