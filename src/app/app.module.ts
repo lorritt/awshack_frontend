@@ -12,7 +12,6 @@ import { ChallengeNavComponent } from './challenge-nav/challenge-nav.component';
 import { SplashComponent } from './splash/splash.component';
 import { MenuComponent } from './menu/menu.component';
 import { SidePageComponent } from './sidepage/sidepage.component';
-import { ContentPageComponent } from './contentpage/contentpage.component';
 import { MenuService } from './menu.service';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -25,7 +24,6 @@ import { HomeComponent } from './home/home.component';
     SplashComponent,
     MenuComponent,
     SidePageComponent,
-    ContentPageComponent,
     LoginComponent,
     HomeComponent
   ],
