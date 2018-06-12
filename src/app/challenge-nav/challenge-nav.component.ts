@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from '../menu.service';
 
 @Component({
   selector: 'app-challenge-nav',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ChallengeNavComponent implements OnInit {
 
   title: String  = 'Points';
-  constructor() { }
-
+  constructor(private menuService: MenuService) { }
+  openMenu() {
+    console.log("Opening Menu");
+    this.menuService.open();
+  }
   ngOnInit() {
   }
 

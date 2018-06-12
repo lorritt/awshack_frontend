@@ -1,3 +1,7 @@
-<p>
-  menu works!
-</p>
+<ons-splitter #splitter>
+  <ons-splitter-side [page]="sidePage" side="left" width="220px" collapse swipeable>
+  </ons-splitter-side>
+
+  <ons-splitter-content [page]="contentPage">
+  </ons-splitter-content>
+</ons-splitter>
