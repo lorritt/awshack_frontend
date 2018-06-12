@@ -9,13 +9,20 @@ import { PointsComponent } from './points/points.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ChallengeNavComponent } from './challenge-nav/challenge-nav.component';
 import { SplashComponent } from './splash/splash.component';
+import { MenuComponent } from './menu/menu.component';
+import { SidePageComponent } from './sidepage/sidepage.component';
+import { ContentPageComponent } from './contentpage/contentpage.component';
+import { MenuService } from './menu.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     PointsComponent,
     ChallengeNavComponent,
-    SplashComponent
+    SplashComponent,
+    MenuComponent,
+    SidePageComponent,
+    ContentPageComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -30,7 +37,7 @@ import { SplashComponent } from './splash/splash.component';
     ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
