@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-challenge-nav',
-  templateUrl: './challenge-nav.component.html',
-  styleUrls: ['./challenge-nav.component.css']
+  templateUrl: './challenge-nav.component.html'
 })
 export class ChallengeNavComponent implements OnInit {
 
-  title: String  = "Points";
+  title: String  = 'Points';
   constructor() { }
 
   ngOnInit() {

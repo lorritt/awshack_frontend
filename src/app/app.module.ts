@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { PointsComponent } from './points/points.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ChallengeNavComponent } from './challenge-nav/challenge-nav.component';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PointsComponent,
-    ChallengeNavComponent
+    ChallengeNavComponent,
+    SplashComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -23,8 +25,8 @@ import { ChallengeNavComponent } from './challenge-nav/challenge-nav.component';
     OnsenModule,
     RouterModule.forRoot([
       { path: 'challenge', component: ChallengeNavComponent },
-      { path: '', redirectTo: 'challenge', pathMatch: 'full'},
-      { path: '**', redirectTo: 'challenge', pathMatch: 'full'}
+      { path: '', component: SplashComponent},
+      { path: '**', component: SplashComponent}
     ]),
     AppRoutingModule
   ],
