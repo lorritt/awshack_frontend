@@ -16,7 +16,11 @@
   <div class="header">  Welcome {{userData.getUsername()}} </div>
 <app-points></app-points>
 <ons-card>
-<ons-button modifier="large" (click)="getChallenge()">Get a Challenge</ons-button>
+<ons-button modifier="large" (click)="getChallenge()">Challenge Me!</ons-button>
+
+<ul>
+        <li *ngFor="let challenge of challenges">{{challenge.name}}</li>
+      </ul>
 </ons-card>
 </div>
 </ons-page>

@@ -15,6 +15,6 @@ export class PointsComponent implements OnInit {
   }
 
   viewTeams() {
-    //this._navigator.element.pushPage(TeamComponent, {animation: 'slide', data: {aaa: 'bbb'}});
+    // this._navigator.element.pushPage(TeamComponent, {animation: 'slide', data: {aaa: 'bbb'}});
   }
 }

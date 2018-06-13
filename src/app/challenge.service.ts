@@ -11,6 +11,11 @@ export class ChallengeService {
 
   // Uses http.get() to load data from a single API endpoint
   getChallenges() {
-      return this.http.get('https://vtdnub7e9g.execute-api.us-east-1.amazonaws.com/dev/getFull');
+    const headers = new HttpHeaders();
+    headers.append('Access-Control-Allow-Headers', 'Content-Type');
+    headers.append('Access-Control-Allow-Methods', 'GET');
+    headers.append('Access-Control-Allow-Origin', '*');
+    headers.append('Content-Type', 'application/json');
+      return this.http.get('https://z9kippml0d.execute-api.us-east-1.amazonaws.com/dev/getFull', {headers : headers});
   }
 }

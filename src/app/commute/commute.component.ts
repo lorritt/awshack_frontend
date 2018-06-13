@@ -25,8 +25,8 @@ export class CommuteComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-  goBack(){
+
+  goBack() {
     this.router.navigate(['home']);
   }
 }

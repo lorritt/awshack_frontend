@@ -18,17 +18,17 @@ export class HomeComponent implements OnInit {
 
   getChallenge() {
        this.challengeService.getChallenges().subscribe(
-        data => { this.challenges = '{"name":"test,"points":5}'; },
+        data => { this.challenges = data; },
         err => console.error(err),
             () => console.log('done loading challenges')
           );
   }
 
-  goToTeam(){
+  goToTeam() {
     this.router.navigate(['team']);
   }
 
-  goToCommute(){
+  goToCommute() {
     this.router.navigate(['commute']);
   }
 
