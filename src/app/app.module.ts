@@ -42,7 +42,7 @@ import { GitComponent } from './git/git.component';
     OnsenModule,
     AngularFontAwesomeModule,
     RouterModule.forRoot([
-      { path: 'challenge', component: ChallengeNavComponent },
+      { path: 'challenge', component: MenuComponent },
       { path: 'login', component: LoginComponent},
       { path: 'home', component: HomeComponent},
       { path: 'team', component: TeamComponent},

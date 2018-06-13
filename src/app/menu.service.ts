@@ -4,7 +4,9 @@ import {
 import {Observable, Subject} from 'rxjs';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class MenuService {
   subject = new Subject();
   get menu$(): Observable<any> {
@@ -12,6 +14,7 @@ export class MenuService {
   }
   open() {
     console.log("Opening Menu");
+    console.log(this.subject);
     this.subject.next();
   }
 }

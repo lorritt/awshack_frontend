@@ -11,6 +11,6 @@ export class ChallengeService {
 
   // Uses http.get() to load data from a single API endpoint
   getChallenges() {
-      return this.http.get('/api/food');
+      return this.http.get('https://vtdnub7e9g.execute-api.us-east-1.amazonaws.com/dev/getFull');
   }
 }
