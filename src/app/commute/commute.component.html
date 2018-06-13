@@ -1,0 +1,33 @@
+<ons-page>
+    <ons-toolbar>      
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center">Your Commute</div>
+    </ons-toolbar>
+    <div class="content">
+      <div style="text-align: center; margin:10px; font-size: 1.5em;">Tell us about your commute.</div>
+      <ons-list>
+          <ons-list-header>Available Means of Transport</ons-list-header>
+          <ons-list-item *ngFor="let color of colors; let i = index">
+            <ons-checkbox
+              [attr.input-id]="'radio-' + i"
+              [attr.value]="color"
+              [(ngModel)]="checkedColors"
+              class="left"
+            >
+            </ons-checkbox>
+            <label [attr.for]="'radio-' + i" class="center">
+              {{ color }}
+            </label>
+          </ons-list-item>
+          </ons-list>
+          <ons-card>
+            Locations
+          <div style="padding: 10px">
+              <div><ons-input placeholder="Home Postcode" [(value)]="homePostcode"></ons-input></div>
+          </div>
+          <div style="padding: 10px">
+              <div><ons-input placeholder="Work Postcode" [(value)]="workPostcode"></ons-input></div>
+          </div>
+        </ons-card>
+    </div>
+  </ons-page>

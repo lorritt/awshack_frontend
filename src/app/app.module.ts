@@ -16,6 +16,7 @@ import { MenuService } from './menu.service';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
+import { CommuteComponent } from './commute/commute.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TeamComponent } from './team/team.component';
     SidePageComponent,
     LoginComponent,
     HomeComponent,
-    TeamComponent
+    TeamComponent,
+    CommuteComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -41,6 +43,7 @@ import { TeamComponent } from './team/team.component';
       { path: 'login', component: LoginComponent},
       { path: 'home', component: HomeComponent},
       { path: 'team', component: TeamComponent},
+      { path: 'commute', component: CommuteComponent},
       { path: '', component: SplashComponent},
       { path: '**', component: SplashComponent}
     ]),
