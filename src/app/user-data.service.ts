@@ -32,6 +32,6 @@ export class UserDataService {
     this.points = points;
   }
   addPoints(points: number) {
-    this.points += points;
+    this.points = +this.points + +points;
   }
 }
