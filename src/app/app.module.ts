@@ -4,7 +4,7 @@ import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PointsComponent } from './points/points.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { CommuteComponent } from './commute/commute.component';
+import { GitComponent } from './git/git.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,14 @@ import { CommuteComponent } from './commute/commute.component';
     LoginComponent,
     HomeComponent,
     TeamComponent,
-    CommuteComponent
+    CommuteComponent,
+    GitComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     OnsenModule,
     AngularFontAwesomeModule,

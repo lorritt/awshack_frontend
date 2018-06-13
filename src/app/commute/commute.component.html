@@ -29,5 +29,36 @@
               <div><ons-input placeholder="Work Postcode" [(value)]="workPostcode"></ons-input></div>
           </div>
         </ons-card>
+        <ons-card>
+            <p>Morning Commute Time<p>
+            <ons-select [(ngModel)]="selectedModifier" [attr.modifier]="selectedModifier">
+              <option *ngFor="let modifier of modifiers" [value]="modifier.value">
+                {{ modifier.label }}
+              </option>
+            </ons-select>
+
+            <p style="font-size: 1em">to </p>
+
+            <ons-select [(ngModel)]="selectedModifier" [attr.modifier]="selectedModifier">
+                <option *ngFor="let modifier of modifiers" [value]="modifier.value">
+                  {{ modifier.label }}
+                </option>
+              </ons-select>
+
+              <p>Evening Commute Time<p>
+                  <ons-select [(ngModel)]="selectedModifier" [attr.modifier]="selectedModifier">
+                    <option *ngFor="let modifier of modifiers" [value]="modifier.value">
+                      {{ modifier.label }}
+                    </option>
+                  </ons-select>
+      
+                  <p style="font-size: 1em">to </p>
+      
+                  <ons-select [(ngModel)]="selectedModifier" [attr.modifier]="selectedModifier">
+                      <option *ngFor="let modifier of modifiers" [value]="modifier.value">
+                        {{ modifier.label }}
+                      </option>
+                    </ons-select>
+          </ons-card>
     </div>
   </ons-page>

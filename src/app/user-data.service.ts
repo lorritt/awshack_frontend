@@ -8,7 +8,7 @@ export class UserDataService {
   private points: number;
 
   constructor() {
-    this.points = 999;
+    this.points = 1;
   }
 
   setUsername(username: String) {
