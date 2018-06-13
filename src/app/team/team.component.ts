@@ -24,6 +24,11 @@ export class TeamComponent implements OnInit {
 
   constructor(userData: UserDataService, private router: Router) {
       this.people.push({score: userData.getPoints(), name: userData.getUsername()});
+      this.people = this.people.sort((a, b) => {
+        if (a.score < b.score) return 1;
+        else if (a.score > b.score) return -1;
+        else return 0;
+      })
    }
 
   ngOnInit() {

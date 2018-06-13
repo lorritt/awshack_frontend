@@ -18,8 +18,6 @@ export class MenuComponent implements OnInit {
     
   }
   ngOnInit() {
-    
-    this.menuService.menu$.subscribe(() => this.splitter.nativeElement.side.open());
    
   }
 

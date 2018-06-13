@@ -20,9 +20,11 @@
                    
                    <div class="center"><strong>{{challenge.name}}</strong> - 
                         <small class="text-muted">{{challenge.description}} </small>
+                        <div></div>
+                        <small style="padding-left: 10px; font-weight:bold" class="text-muted">{{challenge.activity}}</small>
                    </div>
                    <div class="right">
-                       {{challenge.points}} <ons-button (click)="completeChallenge(challenge.points)">Complete!</ons-button>
+                       <div style="padding-right: 20px">{{challenge.points}}</div> <ons-button (click)="completeChallenge(challenge.points)">Complete!</ons-button>
                    </div>
                 </ons-list-item>
             </ons-list>

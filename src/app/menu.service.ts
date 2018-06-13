@@ -15,6 +15,6 @@ export class MenuService {
   open() {
     console.log("Opening Menu");
     console.log(this.subject);
-    this.subject.next();
+    this.subject.next('home');
   }
 }
