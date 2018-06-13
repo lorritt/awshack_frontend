@@ -22,6 +22,15 @@
                         <small class="text-muted">{{challenge.description}} </small>
                         <div></div>
                         <small style="padding-left: 10px; font-weight:bold" class="text-muted">{{challenge.activity}}</small>
+                        <div *ngIf="challenge.difficulty == 'EASY'">
+                                <small style="padding-left: 10px; font-weight:bold; color:green" class="text-muted">{{challenge.difficulty}}</small>
+                        </div>
+                        <div *ngIf="challenge.difficulty == 'MEDIUM'">
+                                <small style="padding-left: 10px; font-weight:bold; color:yellow" class="text-muted">{{challenge.difficulty}}</small>
+                        </div>
+                        <div *ngIf="challenge.difficulty == 'HARD'">
+                                <small style="padding-left: 10px; font-weight:bold; color:yellow" class="text-muted">{{challenge.difficulty}}</small>
+                        </div>
                    </div>
                    <div class="right">
                        <div style="padding-right: 20px">{{challenge.points}}</div> <ons-button (click)="completeChallenge(challenge.points)">Complete!</ons-button>
