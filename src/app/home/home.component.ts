@@ -32,4 +32,9 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['commute']);
   }
 
+  completeChallenge(points: number) {
+    alert('points ' + points);
+    this.userData.setPoints(points);
+  }
+
 }

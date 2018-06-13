@@ -31,4 +31,7 @@ export class UserDataService {
   setPoints(points: number) {
     this.points = points;
   }
+  addPoints(points: number) {
+    this.points += points;
+  }
 }

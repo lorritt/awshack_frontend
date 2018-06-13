@@ -10,12 +10,22 @@
         <div class="header"> Welcome {{userData.getUsername()}} </div>
         <app-points></app-points>
         <ons-card>
-            <ons-button modifier="large" (click)="getChallenge()">Get a Challenge</ons-button>
             <ons-button modifier="large" style="margin-top: 10px" (click)="goToTeam()">Team</ons-button>
             <ons-button modifier="large" style="margin-top: 10px" (click)="goToCommute()">Commute</ons-button>
+            <ons-button modifier="large" style="margin-top: 10px" (click)="getChallenge()">Challenge Me!</ons-button>
         </ons-card>
+        <ons-list>
+                <ons-list-item *ngFor="let challenge of challenges">
+                   <div class="left"><fa name="trophy"></fa></div>
+                   
+                   <div class="center"><strong>{{challenge.name}}</strong> - 
+                        <small class="text-muted">{{challenge.description}} </small>
+                   </div>
+                   <div class="right">
+                       {{challenge.points}} <ons-button (click)="completeChallenge(challenge.points)">Complete!</ons-button>
+                   </div>
+                </ons-list-item>
+            </ons-list>
     </div>
-        <li *ngFor="let challenge of challenges">{{challenge.name}}</li>
-<ul>
-      </ul>
+  
 </ons-page>
