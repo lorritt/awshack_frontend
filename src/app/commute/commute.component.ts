@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-commute',
@@ -20,9 +21,12 @@ export class CommuteComponent implements OnInit {
     {value: '11', label: '11:00'},
     {value: '12', label: '12:00'},
   ];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  
+  goBack(){
+    this.router.navigate(['home']);
+  }
 }

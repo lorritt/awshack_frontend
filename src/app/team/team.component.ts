@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from '../person';
 import { UserDataService } from '../user-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-team',
@@ -21,12 +22,15 @@ export class TeamComponent implements OnInit {
   ];
 
 
-  constructor(userData: UserDataService) {
+  constructor(userData: UserDataService, private router: Router) {
       this.people.push({score: userData.getPoints(), name: userData.getUsername()});
    }
 
   ngOnInit() {
 
   }
+
+  goBack(){
+    this.router.navigate(['home']);  }
 
 }
