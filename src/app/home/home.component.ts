@@ -33,8 +33,7 @@ export class HomeComponent implements OnInit {
   }
 
   completeChallenge(points: number) {
-    alert('points ' + points);
-    this.userData.setPoints(points);
+    this.userData.addPoints(points);
   }
 
 }
