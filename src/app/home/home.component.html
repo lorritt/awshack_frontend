@@ -1,24 +1,18 @@
 <ons-page>
-    <ons-toolbar>     
+    <ons-toolbar>
 
         <div class="center">
-           <div style="font-family: 'TheBlacklist' !important; font-size: 1.2em;">Travel Active</div>
-           </div>
-           <div class="left">
-                <ons-button (click)="goToTeam()">Team</ons-button>
-           </div>
-           <div class="left"></div>
-           <div class="left">
-                <ons-button (click)="goToCommute()">Commute</ons-button>
-           </div>
+            <div style="font-family: 'TheBlacklist' !important; font-size: 1.2em;">Travel Active</div>
+        </div>
+
     </ons-toolbar>
-<div class="content">
-  <div class="header">  Welcome {{userData.getUsername()}} </div>
-<app-points></app-points>
-<ons-card>
-<ons-button modifier="large" (click)="getChallenge()">Get a Challenge</ons-button>
-</ons-card>
-</div>
+    <div class="content">
+        <div class="header"> Welcome {{userData.getUsername()}} </div>
+        <app-points></app-points>
+        <ons-card>
+            <ons-button modifier="large" (click)="getChallenge()">Get a Challenge</ons-button>
+            <ons-button modifier="large" style="margin-top: 10px" (click)="goToTeam()">Team</ons-button>
+            <ons-button modifier="large" style="margin-top: 10px" (click)="goToCommute()">Commute</ons-button>
+        </ons-card>
+    </div>
 </ons-page>
-
-
